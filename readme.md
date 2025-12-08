@@ -30,7 +30,5 @@ python etl.py
 
 **How I would improve / scale for production**
 
-- Make API calls concurrent (`asyncio`/`aiohttp`) and add batching for large datasets.
 - Containerize (`Docker`) and run with an orchestrator (Kubernetes / ECS) or schedule with a workflow engine (Airflow).
 - Add observability: centralized logs (ELK/Datadog), metrics (Prometheus/Grafana), and alerts (PagerDuty/Slack).
-- Harden reliability: circuit breakers, DLQ for bad records, idempotent upserts, and automated retries with backoff.
